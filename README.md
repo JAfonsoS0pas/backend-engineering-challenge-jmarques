@@ -9,15 +9,20 @@ In this repository 3 scripts can be found, the ```events_generator.py``` is a si
 
 Everything was done using Python 3.11.6 so you can use the python or python3 command to run the scripts
 
-to run the generator script use 
+To run the generator script use 
+
 	```python3 events_generator.py --file_name events.json --n_events 100```
+ 
 the --file_name and --n_events are optional and will default to the values provided in the example command. Again this command is optional as in the repository there is already an events file with the example provided in the challange.
 
 To run the remaing scripts use
+
 	```python3 *script_name*.py --input_file events.json --window_size 10 --output_file results.json```
+ 
 here the --input_file and --window_size flags are not optional and should be specified however the --output_file is optional and will default to results.json for the unoptimized script and results_optimized.json for the optimized script.
 
 In Unix or Unix-like systems you can use time before each command to see the runtime of each script and evaluate the performance changes from the first iteration of the script to the last. Example:
+
 	```time python3 unbabel_cli_optimize.py --input_file events.json --window_size 10 --output_file results_optimized.json```
 
 
