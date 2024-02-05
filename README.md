@@ -3,7 +3,7 @@
 
 Welcome to my sollution to the Engineering Challenge 🖖
 
-In this repository 3 scripts can be found, the events_generator.py is a simple script to generate any number of random events for testing porpuses. The 2 remaining scripts are my solutions for this challange, please consider the unbabel_cli_optimized.py script as the main sollution for the challange, the unbabel_cli.py was an original sollution that was kept as a benchmark for the optimizations as well as a validator for the correctness of the optimized scripts output.
+In this repository 3 scripts can be found, the ```events_generator.py``` is a simple script to generate any number of random events for testing porpuses. The 2 remaining scripts are my solutions for this challange, please consider the ```unbabel_cli_optimized.py``` script as the main sollution for the challange, the ```unbabel_cli.py``` was an original sollution that was kept as a benchmark for the optimizations as well as a validator for the correctness of the optimized scripts output.
 
 ## How to run
 
