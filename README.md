@@ -1,15 +1,27 @@
 # Backend Engineering Challenge
 
 
-Welcome to our Engineering Challenge repository 🖖
+Welcome to my sollution to the Engineering Challenge 🖖
 
-If you found this repository it probably means that you are participating in our recruitment process. Thank you for your time and energy. If that's not the case please take a look at our [openings](https://unbabel.com/careers/) and apply!
+In this repository 3 scripts can be found, the events_generator.py is a simple script to generate any number of random events for testing porpuses. The 2 remaining scripts are my solutions for this challange, please consider the unbabel_cli_optimized.py script as the main sollution for the challange, the unbabel_cli.py was an original sollution that was kept as a benchmark for the optimizations as well as a validator for the correctness of the optimized scripts output.
 
-Please fork this repo before you start working on the challenge, read it careful and take your time and think about the solution. Also, please fork this repository because we will evaluate the code on the fork.
+## How to run
 
-This is an opportunity for us both to work together and get to know each other in a more technical way. If you have any questions please open and issue and we'll reach out to help.
+Everything was done using Python 3.11.6 so you can use the python or python3 command to run the scripts
 
-Good luck!
+to run the generator script use 
+	```python3 events_generator.py --file_name events.json --n_events 100```
+the --file_name and --n_events are optional and will default to the values provided in the example command. Again this command is optional as in the repository there is already an events file with the example provided in the challange.
+
+To run the remaing scripts use
+	```python3 *script_name*.py --input_file events.json --window_size 10 --output_file results.json```
+here the --input_file and --window_size flags are not optional and should be specified however the --output_file is optional and will default to results.json for the unoptimized script and results_optimized.json for the optimized script.
+
+In Unix or Unix-like systems you can use time before each command to see the runtime of each script and evaluate the performance changes from the first iteration of the script to the last. Example:
+	```time python3 unbabel_cli_optimize.py --input_file events.json --window_size 10 --output_file results_optimized.json```
+
+
+ 
 
 ## Challenge Scenario
 
